@@ -1,0 +1,93 @@
+body{
+	font-family: courier;
+	font-size: 12pt;
+	font-weight:bolder;
+	background-color:#AA0000
+}
+h1{
+	text-align:center;
+	font-size:30pt;
+}	
+/* dropdown menu controls */
+.dropbtn{
+	background-color: #000055;
+	color:white;
+	padding:8px;
+	font-size: 16px;
+	border:none;
+	cursor: pointer;
+}
+/* makes menu drop down when mouse hovers over */
+.dropbtn:hover, .dropbtn:focus{
+background-color: #0000AA;
+}
+.dropdown{
+	position:relative;
+	display: inline-block;
+	padding:-8px -0px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000077;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{background-color:#000099}
+.show{display:block;}
+
+/* search bar*/
+	#Tsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+/* end search bar */
+</body>
+</html>
+
