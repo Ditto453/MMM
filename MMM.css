@@ -1,38 +1,48 @@
+
+/*basic formatting*/
 body{
+	color:#000000;
+	background-color:#777777;
+/*	background-image:url("MMM logo.png");*/
 	font-family: courier;
 	font-size: 12pt;
-	font-weight:bolder;
-	background-color:#AA0000
+	font-weight:100;
+
 }
 h1{
 	text-align:center;
 	font-size:30pt;
 }	
+b{
+	font-weight:700;
+}
+/* end basic formatting */
+
 /* dropdown menu controls */
 .dropbtn{
-	background-color: #000055;
-	color:white;
+	background-color: #0000FF;
+	color:Black;
 	padding:8px;
 	font-size: 16px;
 	border:none;
 	cursor: pointer;
+	min-width:160px;
 }
-/* makes menu drop down when mouse hovers over */
-.dropbtn:hover, .dropbtn:focus{
-background-color: #0000AA;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
-.dropdown{
-	position:relative;
-	display: inline-block;
-	padding:-8px -0px;
-}
+
+/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #000077;
-    min-width: 80px;
+	right:0;
+    background-color: #0000DD;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
 }
 .dropdown-content a {
     color: white;
@@ -40,19 +50,20 @@ background-color: #0000AA;
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:hover{background-color:#000099}
-.show{display:block;}
+/*dropdown background color*/ .dropdown-content a:hover{background-color:#000099}
+.dropdown:hover .dropdown-content{display:block;}
+.dropdown:hover .dropbtn{background-color: #000099; }
 
 /* search bar*/
 	#Tsearch{
-		float:right;
-		padding:20px;
+		padding:5px;
+		background-color: #0000FF;
 	}
 	.tftextinput{
 		margin: 0;
 		padding: 5px 15px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size:14px;
+		font-size:12pt;
 		border:1px solid #0076a3; border-right:0px;
 		border-top-left-radius: 5px 5px;
 		border-bottom-left-radius: 5px 5px;
@@ -61,7 +72,7 @@ background-color: #0000AA;
 		margin: 0;
 		padding: 5px 15px;
 		font-family: Arial, Helvetica, sans-serif;
-		font-size:14px;
+		font-size:12pt;
 		outline: none;
 		cursor: pointer;
 		text-align: center;
@@ -69,7 +80,7 @@ background-color: #0000AA;
 		color: #ffffff;
 		border: solid 1px #0076a3; border-right:0px;
 		background: #0095cd;
-		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -webkit-gradient(linear, left top, left bottom, from(#000077), to(#0078aa));
 		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
 		border-top-right-radius: 5px 5px;
 		border-bottom-right-radius: 5px 5px;
@@ -81,13 +92,7 @@ background-color: #0000AA;
 		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 	}
 	/* Fixes submit button height problem in Firefox */
-	.tfbutton::-moz-focus-inner {
-	  border: 0;
-	}
-	.tfclear{
-		clear:both;
-	}
+	.tfbutton::-moz-focus-inner { border: 0;}
+	.tfclear{clear:both;}
 /* end search bar */
-</body>
-</html>
 
